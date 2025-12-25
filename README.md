@@ -19,6 +19,22 @@ The author is **not responsible for misuse** of this software.
 
 ---
 
+## 🧠 Threat Model & Use Case
+
+This tool simulates common password attack techniques to help understand:
+
+- How weak passwords are exploited
+- The effectiveness of dictionary vs brute-force attacks
+- Real-world limitations of password-based security
+- Incident response and forensic password analysis
+
+**Target users:**
+- Cybersecurity students
+- Digital forensics learners
+- Blue-team / defensive security training environments
+
+---
+
 ## 🚀 Features
 
 - Hash password auditing:
@@ -99,19 +115,30 @@ Users must supply their own wordlist path when running the tool.
 
 - bcrypt verification uses `bcrypt.checkpw()` (no insecure re-hashing)
 - Large wordlists are streamed line-by-line to avoid memory exhaustion
-- Explicit user authorization is required at runtime
+- Explicit user confirmation before attack execution
 - No hardcoded paths or bundled wordlists
+- Designed to avoid accidental misuse
 
 ---
 
-## 📘 Learning Outcomes
+## 🎯 Learning Outcomes
 
-This project demonstrates:
-- Practical password security concepts
-- Correct cryptographic handling
-- Secure coding practices
-- Ethical considerations in cybersecurity tooling
-- Python performance optimization
+Through this project, I learned:
+
+- Practical password attack methodologies
+- Limitations of brute-force and dictionary attacks
+- Secure handling of sensitive data
+- Ethical boundaries in offensive security
+- Python performance optimization techniques
+
+---
+
+## 🚧 Future Enhancements
+
+- GPU acceleration support
+- Integration with Have I Been Pwned API
+- Web-based dashboard
+- Password policy compliance scoring
 
 ---
 
